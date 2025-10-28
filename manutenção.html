@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Site em Manutenção</title>
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+            color: #69204F;
+        }
+        input { padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
+        button { padding: 10px 20px; border: none; background-color: #D8A1AB; color: white; border-radius: 5px; cursor: pointer; margin-top: 10px;}
+        button:hover { background-color: #CB8589; }
+    </style>
+</head>
+<body>
+    <h1>Site em Manutenção</h1>
+    <p>Digite a senha para acessar:</p>
+    <input type="password" id="senha" placeholder="Senha">
+    <button onclick="verificarSenha()">Entrar</button>
+
+    <script>
+        function verificarSenha() {
+            const senhaCorreta = "dalila2025"; // Alterar para a senha desejada
+            const senhaDigitada = document.getElementById("senha").value;
+
+            if(senhaDigitada === senhaCorreta){
+                window.location.href = "index.html"; // Site original
+            } else {
+                alert("Senha incorreta!");
+            }
+        }
+    </script>
+</body>
+</html>

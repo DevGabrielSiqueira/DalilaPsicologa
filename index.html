@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalila Carvalho – Psicóloga</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="#inicio" class="logo-line-1">Dalila</a>
+                <a href="#inicio" class="logo-line-2">Carvalho</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#agendamento">Agende Seu Atendimento</a></li>
+                    <li><a href="#faq">Perguntas Frequentes</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="https://www.instagram.com/dalilacarvalho_psi/" target="_blank"
+                            class="instagram-icon"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>Acolhimento e Transformação Através da Terapia</h1>
+                <p>Encontre suporte profissional para seu bem-estar emocional, online ou presencial.</p>
+                <a href="#agendamento" class="btn-primary">Agende sua sessão</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="about section-padding">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Sobre Mim</h2>
+                        <p>[Espaço reservado para a breve descrição da psicóloga Dalila Carvalho. Aqui, você pode
+                            incluir sua formação, especializações, abordagens terapêuticas e sua filosofia de trabalho.
+                            Transmita empatia, experiência e dedicação ao cuidado com a saúde mental.]</p>
+                        <p>[Adicione mais um parágrafo se desejar detalhar sua trajetória profissional e como ela pode
+                            ajudar seus pacientes.]</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="imgs/Dalila02.jpg"
+                            alt="Foto de Dalila Carvalho, Psicóloga">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="services section-padding">
+            <div class="container">
+                <h2>Serviços</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-user"></i>
+                        <h3>Terapia Individual</h3>
+                        <p>Suporte personalizado para lidar com desafios pessoais, autoconhecimento e desenvolvimento.
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-heart"></i>
+                        <h3>Terapia de Casal</h3>
+                        <p>Fortaleça seu relacionamento, melhore a comunicação e resolva conflitos.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-child"></i>
+                        <h3>Terapia Infantil</h3>
+                        <p>Auxílio para crianças no desenvolvimento emocional e comportamental, em um ambiente seguro e
+                            lúdico.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="agendamento" class="scheduling section-padding">
+            <div class="container">
+                <h2>Agende Seu Atendimento</h2>
+                <div class="scheduling-inner-card">
+                    <div class="calendar-wrapper">
+                        <h3>Selecione a Data</h3>
+                        <div class="calendar">
+                            <div class="calendar-header">
+                                <button class="nav-btn">&lt;</button>
+                                <span id="month-year"></span>
+                                <button class="nav-btn">&gt;</button>
+                            </div>
+                            <div class="days-of-week">
+                                <div>Dom</div>
+                                <div>Seg</div>
+                                <div>Ter</div>
+                                <div>Qua</div>
+                                <div>Qui</div>
+                                <div>Sex</div>
+                                <div>Sáb</div>
+                            </div>
+                            <div class="dates" id="dates"></div>
+                        </div>
+                    </div>
+                    <div class="time-slots-wrapper">
+                        <h3>Selecione o Horário</h3>
+                        <div class="time-slots" id="available-times">
+                            <p>Selecione uma data para ver os horários disponíveis.</p>
+                        </div>
+                        <button class="btn-secondary" onclick="openWhatsApp()">
+                            Confirmar Agendamento
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq section-padding">
+            <div class="container">
+                <h2>Perguntas Frequentes</h2>
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Quanto tempo eu vou fazer terapia?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <p class="faq-answer">A duração do processo terapêutico é individual e depende das suas
+                            necessidades e objetivos. Em comum acordo, definiremos juntos o tempo que a terapia será
+                            necessária para alcançar seus resultados.</p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>O que é Terapia Cognitivo-Comportamental (TCC)?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <p class="faq-answer">A TCC é uma abordagem da psicologia que se concentra em como os
+                            pensamentos, sentimentos e comportamentos estão interligados. O objetivo é identificar e
+                            mudar padrões de pensamento negativos para melhorar o bem-estar emocional.</p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Qual a duração de uma sessão de terapia?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <p class="faq-answer">As sessões de terapia individual geralmente duram de 50 a 60 minutos. A
+                            frequência é combinada com o paciente, mas no início costuma ser semanal.</p>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>A terapia online é tão eficaz quanto a presencial?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <p class="faq-answer">Sim, a terapia online tem se mostrado tão eficaz quanto a presencial para
+                            a maioria dos casos. Ela oferece flexibilidade, comodidade e a possibilidade de atendimento
+                            a pessoas de qualquer lugar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact section-padding">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Fale Comigo</h3>
+                        <p><i class="fas fa-phone"></i> (XX) XXXX-XXXX</p>
+                        <p><i class="fas fa-envelope"></i> dalila.carvalho@email.com</p>
+                        <p><a href="https://www.instagram.com/dalilacarvalho_psi/" target="_blank"
+                                class="instagram-link"><i class="fab fa-instagram"></i> @dalilacarvalho_psi</a></p>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Envie uma Mensagem</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="nome">Nome completo</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem ou dúvida</label>
+                                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-whatsapp">Enviar via WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="instagram" class="instagram-feed section-padding">
+            <div class="container">
+                <h2>Siga no Instagram</h2>
+                <div class="instagram-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-item"><img src="https://via.placeholder.com/200x200?text=Post+1"
+                                alt="Post Instagram 1"></div>
+                        <div class="carousel-item"><img src="https://via.placeholder.com/200x200?text=Post+2"
+                                alt="Post Instagram 2"></div>
+                        <div class="carousel-item"><img src="https://via.placeholder.com/200x200?text=Post+3"
+                                alt="Post Instagram 3"></div>
+                        <div class="carousel-item"><img src="https://via.placeholder.com/200x200?text=Post+4"
+                                alt="Post Instagram 4"></div>
+                        <div class="carousel-item"><img src="https://via.placeholder.com/200x200?text=Post+5"
+                                alt="Post Instagram 5"></div>
+                        <div class="carousel-item"><img src="https://via.placeholder.com/200x200?text=Post+6"
+                                alt="Post Instagram 6"></div>
+                        <div class="carousel-item"><img src="https://via.placeholder.com/200x200?text=Post+7"
+                                alt="Post Instagram 7"></div>
+                        <div class="carousel-item"><img src="https://via.placeholder.com/200x200?text=Post+8"
+                                alt="Post Instagram 8"></div>
+                        <div class="carousel-item"><img src="https://via.placeholder.com/200x200?text=Post+1"
+                                alt="Post Instagram 1"></div>
+                        <div class="carousel-item"><img src="https://via.placeholder.com/200x200?text=Post+2"
+                                alt="Post Instagram 2"></div>
+                        <div class="carousel-item"><img src="https://via.placeholder.com/200x200?text=Post+3"
+                                alt="Post Instagram 3"></div>
+                        <div class="carousel-item"><img src="https://via.placeholder.com/200x200?text=Post+4"
+                                alt="Post Instagram 4"></div>
+                        <div class="carousel-item"><img src="https://via.placeholder.com/200x200?text=Post+5"
+                                alt="Post Instagram 5"></div>
+                        <div class="carousel-item"><img src="https://via.placeholder.com/200x200?text=Post+6"
+                                alt="Post Instagram 6"></div>
+                        <div class="carousel-item"><img src="https://via.placeholder.com/200x200?text=Post+7"
+                                alt="Post Instagram 7"></div>
+                        <div class="carousel-item"><img src="https://via.placeholder.com/200x200?text=Post+8"
+                                alt="Post Instagram 8"></div>
+                    </div>
+                </div>
+                <div class="instagram-button-container">
+                    <a href="https://www.instagram.com/dalilacarvalho_psi/" target="_blank"
+                        class="btn-instagram">@dalilacarvalho_psi</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="footer-logo">Dalila Carvalho </p>
+                    <div class="footer-contact-icons">
+                        <a href="mailto:dalila.carvalho@email.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/+55XXXXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/dalilacarvalho_psi/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <p>&copy; 2025 Dalila Carvalho. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-right">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#sobre">Sobre Mim</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#agendamento">Agende Seu Atendimento</a></li>
+                            <li><a href="#faq">Perguntas Frequentes</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
