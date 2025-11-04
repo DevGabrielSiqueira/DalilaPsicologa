@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site em Manutenção</title>
     <style>
         body {
@@ -11,29 +12,88 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin: 0;
             background-color: #f8f8f8;
             color: #69204F;
+            text-align: center;
+            padding: 20px;
         }
-        input { padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
-        button { padding: 10px 20px; border: none; background-color: #D8A1AB; color: white; border-radius: 5px; cursor: pointer; margin-top: 10px;}
-        button:hover { background-color: #CB8589; }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            max-width: 400px;
+            line-height: 1.5;
+        }
+
+        input {
+            padding: 12px;
+            width: 80%;
+            max-width: 300px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            background-color: #D8A1AB;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #CB8589;
+            transform: scale(1.05);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.9rem;
+            color: #9c7a8f;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.95rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Site em Manutenção</h1>
-    <p>Digite a senha para acessar:</p>
-    <input type="password" id="senha" placeholder="Senha">
+    <h1>Estamos passando por um momento especial 💭</h1>
+    <p>Algo novo está sendo preparado para você. Enquanto isso, digite a senha para ter acesso antecipado e descobrir o que vem por aí.</p>
+
+    <input type="password" id="senha" placeholder="Digite a senha">
     <button onclick="verificarSenha()">Entrar</button>
+
+    <footer>&copy; 2025 Dalila Psicóloga | Todos os direitos reservados</footer>
 
     <script>
         function verificarSenha() {
-            const senhaCorreta = "dalila2025"; // Alterar para a senha desejada
-            const senhaDigitada = document.getElementById("senha").value;
+            const senhaCorreta = "dalila2025"; // altere conforme desejar
+            const senhaDigitada = document.getElementById("senha").value.trim();
 
-            if(senhaDigitada === senhaCorreta){
-                window.location.href = "index.html"; // Site original
+            if (senhaDigitada === senhaCorreta) {
+                window.location.href = "index.html"; // redireciona para o site
             } else {
-                alert("Senha incorreta!");
+                alert("Senha incorreta! Tente novamente.");
             }
         }
     </script>
